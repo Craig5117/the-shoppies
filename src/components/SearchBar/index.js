@@ -43,7 +43,7 @@ function SearchBar() {
   }
   return (
     <Form inline onSubmit={handleSearch} className="mx-3 mt-3">
-      <Button className="button btn-general" type="submit">
+      <Button className="button btn-general" type="submit" aria-label="search">
         <i className="fas fa-search"></i>
       </Button>
       <FormControl
