@@ -3,3 +3,7 @@ h1 {
     background-color: #002e25;
     color: white;
 }
+
+a {
+    text-decoration: none;
+}
