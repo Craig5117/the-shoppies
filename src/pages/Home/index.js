@@ -27,7 +27,7 @@ function Home() {
             Fantastic! You have made 5 nominations.
           </p>
         ) : (
-          <p className="text-center">
+          <p className="text-center info">
             Search for movies and select up to 5 of your favorites for
             nomination to win a Shoppy award
           </p>

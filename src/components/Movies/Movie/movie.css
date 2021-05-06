@@ -11,3 +11,13 @@
     overflow: auto;
     text-overflow: ellipsis;
 }
+
+@media screen and (max-width: 767px) {
+    .movie-card {
+        height: 35em;
+    }
+
+    .movie-card-image-container {
+        height: 24em;
+    }
+}

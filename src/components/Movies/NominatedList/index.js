@@ -21,6 +21,7 @@ function NominatedList() {
   }, [nominatedMovies]);
   return (
     <Col xs={11} md={6}>
+    <h2 className="small-screen-header">Your Nominations</h2>
       <ul>
         {nominatedMovies.map((movie, i) => (
           <li key={i} className="mb-3">

@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px){
+    .movie-list {
+        max-height: 450px;
+        overflow: auto;
+        margin-bottom: 2em;
+    }
+}

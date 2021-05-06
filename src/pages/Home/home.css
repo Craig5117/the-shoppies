@@ -19,3 +19,22 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+.small-screen-header {
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .list-headers {
+        display: none;
+    }
+
+    .banner, .info {
+        font-size: small;
+    }
+
+    .small-screen-header {
+        display: block;
+        font-size: 1em;
+    }
+}

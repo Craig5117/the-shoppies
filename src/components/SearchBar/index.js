@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import { searchOMDB } from '../../utils/API';
 import { useDispatch } from 'react-redux';
+import searchIcon from '../../assets/images/search_white_24dp.svg'
 
 function SearchBar() {
   const dispatch = useDispatch();
@@ -44,7 +45,7 @@ function SearchBar() {
   return (
     <Form inline onSubmit={handleSearch} className="mx-3 mt-3">
       <Button className="button btn-general" type="submit" aria-label="search">
-        <i className="fas fa-search"></i>
+        <img src={searchIcon} alt="search icon"></img>
       </Button>
       <FormControl
         type="text"
