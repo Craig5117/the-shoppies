@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import { searchOMDB } from '../../utils/API';
 
-function NavBar() {
+function SearchBar() {
     const [searchedMovies, setSearchedMovies] = useState([]);
     useEffect(() => {
         if (searchedMovies.length) {
@@ -42,4 +42,4 @@ function NavBar() {
     )
 }
 
-export default NavBar;
+export default SearchBar;

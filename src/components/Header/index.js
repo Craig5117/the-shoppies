@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../NavBar';
+import SearchBar from '../SearchBar';
 
 function Header() {
     return (
         <div>
             <h1>The Shoppies</h1>
-            <Navbar></Navbar>
+            <SearchBar></SearchBar>
         </div>
     )
 }
