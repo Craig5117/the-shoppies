@@ -17,6 +17,15 @@ export default function moviesReducer(state = initialState, action) {
                 nominatedMovies: [...state.nominatedMovies, action.payload]
             }
         }
+        case 'movies/REMOVE_NOMINATED_MOVIE': {
+            let newNominatedList = state.movies.nominatedMovies.filter((movie) => {
+                return movie.title !== action.payload;
+            })
+            return {
+                ...state,
+                nominatedMovies: newNominatedList
+            }
+        }
         default:
             return state;
     }

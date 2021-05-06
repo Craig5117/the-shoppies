@@ -1,0 +1,16 @@
+.nominated-image {
+    width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+    .nominated-image {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .nominated-image {
+        width: 10%;
+    }
+}
+
