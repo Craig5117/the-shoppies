@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/the-shoppies/static/css/main.8dd71b8e.chunk.css",
+    "main.js": "/the-shoppies/static/js/main.82542d8e.chunk.js",
+    "main.js.map": "/the-shoppies/static/js/main.82542d8e.chunk.js.map",
+    "runtime-main.js": "/the-shoppies/static/js/runtime-main.b2fc9f34.js",
+    "runtime-main.js.map": "/the-shoppies/static/js/runtime-main.b2fc9f34.js.map",
+    "static/css/2.acd75131.chunk.css": "/the-shoppies/static/css/2.acd75131.chunk.css",
+    "static/js/2.f1c72a91.chunk.js": "/the-shoppies/static/js/2.f1c72a91.chunk.js",
+    "static/js/2.f1c72a91.chunk.js.map": "/the-shoppies/static/js/2.f1c72a91.chunk.js.map",
+    "index.html": "/the-shoppies/index.html",
+    "static/css/2.acd75131.chunk.css.map": "/the-shoppies/static/css/2.acd75131.chunk.css.map",
+    "static/css/main.8dd71b8e.chunk.css.map": "/the-shoppies/static/css/main.8dd71b8e.chunk.css.map",
+    "static/js/2.f1c72a91.chunk.js.LICENSE.txt": "/the-shoppies/static/js/2.f1c72a91.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2fc9f34.js",
+    "static/css/2.acd75131.chunk.css",
+    "static/js/2.f1c72a91.chunk.js",
+    "static/css/main.8dd71b8e.chunk.css",
+    "static/js/main.82542d8e.chunk.js"
+  ]
+}
