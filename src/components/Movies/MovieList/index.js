@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 function MovieList() {
     const searchedMovies = useSelector((state) => state.movies.searchedMovies);
     return (
-        <Col xs={11} md={6} className="d-flex flex-wrap mt-5">
+        <Col xs={11} md={6} className="d-flex flex-wrap">
             {searchedMovies.map((movie, i) => (
                 <Movie
                     movie={movie}
