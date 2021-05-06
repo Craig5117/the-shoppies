@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -18,9 +18,14 @@ function Movie(props) {
             });
         } else {
             alert('You have already nominated 5 movies. Remove a movie from your nominations list before adding another.')
-        }
-        
+        }   
     }
+    useEffect(() => {
+        if(nominatedMovies.length) {
+            localStorage.setItem('nominations', JSON.stringify(nominatedMovies));
+        }
+    }, [nominatedMovies])
+
     return (
         <Col md={6} lg={3} className="p-1">
             <Card>

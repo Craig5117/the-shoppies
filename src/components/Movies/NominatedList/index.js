@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -14,6 +14,11 @@ function NominatedList () {
             payload: title,
         });
     }
+    useEffect(() => {
+        if(nominatedMovies.length) {
+            localStorage.setItem('nominations', JSON.stringify(nominatedMovies));
+        }
+    }, [nominatedMovies])
     return(
         <Col xs={11} md={6}>
             <ul>

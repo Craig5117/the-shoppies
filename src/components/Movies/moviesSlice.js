@@ -1,6 +1,9 @@
+import { loadNominations } from '../../utils/localStorage';
+
+const loadedNominations = loadNominations();
 const initialState = {
     searchedMovies: [],
-    nominatedMovies: []
+    nominatedMovies: loadedNominations
 }
 
 export default function moviesReducer(state = initialState, action) {
