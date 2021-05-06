@@ -26,6 +26,10 @@ function SearchBar() {
                   poster: movie.Poster
                }))
                dispatch({
+                type: 'movies/UPDATE_SEARCHED_TITLE',
+                payload: searchedTitle
+               });
+               dispatch({
                 type: 'movies/UPDATE_SEARCHED_MOVIES',
                 payload: movieData,
                 });
@@ -34,9 +38,9 @@ function SearchBar() {
             }
             }
     return (
-        <Form inline onSubmit={handleSearch}>
-            <Button className="button" type="submit"><i className="fas fa-search"></i></Button>
-            <FormControl type="text" placeholder="Search" className="w-auto d-inline align-middle" id="search-bar"/>
+        <Form inline onSubmit={handleSearch} className="mx-3 mt-3">
+            <Button className="button btn-general" type="submit"><i className="fas fa-search"></i></Button>
+            <FormControl type="text" placeholder="Search" className="w-auto d-inline align-middle mx-3" id="search-bar"/>
         </Form>
     )
 }

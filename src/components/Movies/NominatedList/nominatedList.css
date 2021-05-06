@@ -1,3 +1,7 @@
+ul {
+    list-style-type: none;
+}
+
 .nominated-image {
     width: 20%;
 }

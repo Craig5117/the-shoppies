@@ -35,7 +35,7 @@ function Movie(props) {
                     <Card.Text>{movie.year}</Card.Text>
                     <Button
                         disabled={nominatedMovies?.some((nomMovie) => nomMovie.title === movie.title)}
-                        className='btn-block btn-info'
+                        className='btn-block btn-general'
                         onClick={() => handleNominate(movie)}>Nominate
                     </Button>
                 </Card.Body>

@@ -2,12 +2,19 @@ import { loadNominations } from '../../utils/localStorage';
 
 const loadedNominations = loadNominations();
 const initialState = {
+    searchedTitle: '',
     searchedMovies: [],
     nominatedMovies: loadedNominations
 }
 
 export default function moviesReducer(state = initialState, action) {
     switch (action.type) {
+        case 'movies/UPDATE_SEARCHED_TITLE': {
+            return {
+                ...state,
+                searchedTitle: action.payload
+            }
+        }
         case 'movies/UPDATE_SEARCHED_MOVIES': {
             return {
                 ...state,

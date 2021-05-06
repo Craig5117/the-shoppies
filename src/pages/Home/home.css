@@ -1,0 +1,15 @@
+.list-headers {
+    background-color: #002e25;
+    color: white;
+}
+
+.banner-container {
+    height: 3em;
+}
+
+.banner {
+    background-color: rgb(211, 211, 112);
+    font-size: larger;
+    font-weight: bolder;
+    color: #002e25;
+}
