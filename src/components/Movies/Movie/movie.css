@@ -1,3 +1,13 @@
+.movie-card {
+    height: 27em;
+}
+
+.movie-card-image-container {
+    height: 16em
+}
+
 .movie-card-title {
-    height: 2em;
+    height: 3em;
+    overflow: auto;
+    text-overflow: ellipsis;
 }

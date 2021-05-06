@@ -4,10 +4,10 @@ import './header.css';
 
 function Header() {
     return (
-        <div>
+        <header>
             <h1 className="m-3">The Shoppies</h1>
             <SearchBar></SearchBar>
-        </div>
+        </header>
     )
 }
 

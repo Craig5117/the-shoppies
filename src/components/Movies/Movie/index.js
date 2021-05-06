@@ -28,8 +28,10 @@ function Movie(props) {
 
     return (
         <Col md={6} lg={3} className="p-1">
-            <Card>
-                <Card.Img variant="top" src={movie.poster} />
+            <Card className="movie-card">
+                <div className="movie-card-image-container">
+                <Card.Img className="movie-card-image" variant="top" src={movie.poster} />
+                </div>
                 <Card.Body>
                     <Card.Title className="movie-card-title">{movie.title}</Card.Title>
                     <Card.Text>{movie.year}</Card.Text>

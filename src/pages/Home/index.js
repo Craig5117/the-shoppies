@@ -8,13 +8,14 @@ import { useSelector } from 'react-redux';
 
 function Home() {
     const nominatedMovies = useSelector((state) => state.movies.nominatedMovies);
+    const searchedTitle = useSelector((state) => state.movies.searchedTitle);
   return (
     <div>
-      <Row className="list-headers mt-3">
-        <Col>
-          <h2 className="mx-5">Search Results</h2>
+      <Row className="list-headers mt-3 mx-0">
+        <Col md={6}>
+          <h2 className="mx-5 search-header">Search Results {searchedTitle ? `for "${searchedTitle}"`: ``}</h2>
         </Col>
-        <Col>
+        <Col md={6}>
           <h2 className="mx-5">Your Nominations</h2>
         </Col>
       </Row>
