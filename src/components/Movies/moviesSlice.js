@@ -1,5 +1,5 @@
 const initialState = {
-    searchedMovies: ['working'],
+    searchedMovies: [],
     nominatedMovies: []
 }
 

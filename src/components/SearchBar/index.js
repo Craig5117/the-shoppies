@@ -3,14 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import { searchOMDB } from '../../utils/API';
+import { useDispatch } from 'react-redux';
 
 function SearchBar() {
-    const [searchedMovies, setSearchedMovies] = useState([]);
-    useEffect(() => {
-        if (searchedMovies.length) {
-            console.log(searchedMovies);
-        }
-    }, [searchedMovies])
+    const dispatch = useDispatch();
     async function handleSearch(event) {
             event.preventDefault();
             const searchedTitle = event.target.querySelector('#search-bar').value.trim();
@@ -29,7 +25,10 @@ function SearchBar() {
                   year: movie.Year,
                   poster: movie.Poster
                }))
-               setSearchedMovies(movieData);
+               dispatch({
+                type: 'movies/UPDATE_SEARCHED_MOVIES',
+                payload: movieData,
+                });
             } catch (err) {
                 console.error(err);
             }
